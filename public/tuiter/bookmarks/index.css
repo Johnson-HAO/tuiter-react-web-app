@@ -1,0 +1,67 @@
+body {
+    font-family: "Arial";
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+    padding-left: 16px;
+}
+
+.wd-atitle-font {
+    color:white;
+    font-size: 20px;
+}
+
+.wd-ahandle-font {
+    color: lightgray;
+    font-size: 13px;
+}
+.wd-border {
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+.wd-a {
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.wd-img-border {
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.wd-img {
+    border-radius: 48px;
+}
+
+.wd-display {
+    display: inline-block;
+}
+
+.wd-human {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-handle {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-words {
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+}
+
+.wd-title {
+    font-bold;
+    font-size: 15px;
+}
+
+.wd-sentences {
+    padding: 12px;
+    font-size: 15px;
+    color: lightgray;
+}
