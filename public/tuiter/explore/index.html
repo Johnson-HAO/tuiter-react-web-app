@@ -5,57 +5,208 @@
     <title>Title</title>
     <link href="index.css"
           rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="../../vendors/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="padded-left">
-        <input class=" wd-rounded-corners-all-around wd-fg-color-white wd-bg-color-darkgray wd-search" placeholder="Search Tuiter"/>
-        <a href="explore-settings.html" class="wd-gear">&#x2699</a>
-        <ul class="wd-nav-tabs wd-nav-tabs-padded">
-            <li class="wd-selected">For you</li>
-            <li class="wd-others">Trending</li>
-            <li class="wd-others">COVID-19</li>
-            <li class="wd-others">News</li>
-            <li class="wd-others">Sports</li>
-            <li class="wd-others">Entertainment</li>
-        </ul>
-        <div class="wd-nav-border">
-            <h3 class="wd-trend-topic">Trending in Science</h3>
-            <h2>Starship</h2>
-            <h3>55.5K views</h3>
+<div class="container pt-1">
+    <div class="row">
+        <div class="d-none d-sm-block col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
+            <div class="list-group">
+                <i class="fab fa-twitter list-group-item list-group-item-action"></i>
+                <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-house-chimney"></i><span class="d-none d-xl-inline-block ms-1">Home</span></a>
+                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action active">
+                    <i class="fa-solid fa-hashtag"></i><span class="d-none d-xl-inline-block ms-1">Explore</span></a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+                    <i class="fas fa-bell"></i><span class="d-none d-xl-inline-block ms-1">Notifications</span></a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
+                    <i class="fas fa-envelope"></i><span class="d-none d-xl-inline-block ms-1">Messages</span></a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action">
+                    <i class="fas fa-bookmark"></i><span class="d-none d-xl-inline-block ms-1">Bookmarks</span></a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+                    <i class="fas fa-list"></i><span class="d-none d-xl-inline-block ms-1">Lists</span></a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
+                    <i class="fas fa-user"></i><span class="d-none d-xl-inline-block ms-1">Profile</span></a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action">
+                    <i class="fas fa-ellipsis"></i><span class="d-none d-xl-inline-block ms-1">More</span></a>
+            </div>
+            <!--button-->
 
-            <h3 class="wd-trend-topic">Sports Trending</h3>
-            <h2>Joe Rogan</h2>
-            <h3 class="wd-trend-topic">5,218 Tweets</h3>
-        </div>
-        <div class="wd-nav-border">
-            <h3>The New York Times</h3>
-            <h2>CNN's Cuomo Conundrum: A star anchor with a brother in trouble</h2>
-            <img class="wd-padded-pic" width="100px" height="100px" src="../../labs/a2/teslabot.jpg"/>
-        </div>
+            <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
 
-        <div class="wd-nav-border">
-            <h3>NBC News</h3>
-            <h2>Queen Elizabeth</h2>
-            <img class="wd-padded-pic" width="100px" height="100px" src="queen.jpeg"/>
+            <br/><br/><br/><br/><br/>
         </div>
 
-        <div class="wd-nav-border">
-            <h3 class="wd-trend-topic">COVID-19</h3>
-            <h2>COVID-19: News and updates</h2>
-            <img class="wd-padded-pic" width="100px" height="100px" src="covid19.jpg"/>
-        </div>
+        <div class="col-12 col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+            <div class="row">
+                <div class="col-10">
+                    <div class="position-relative">
+                        <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter"/>
+                        <span class="position-absolute wd-search-tuiter"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                <div class="col-2 mt-1 mb-1">
+                    <i class="fa-solid fa-gear wd-gear fa-2x"></i>
+                </div>
+            </div>
+            <ul class="nav nav-tabs wd-nav-tabs mt-1 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">
+                        For You
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">
+                        Trending
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">
+                        News
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html" tabindex="-1">
+                        Sports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-md-inline-block" href="entertainment.html" tabindex="-1">
+                        Entertainment
+                    </a>
+                </li>
+            </ul>
 
-        <div class="wd-nav-border">
-            <h3 class="wd-trend-topic">Presidential debate</h3>
-            <h2>Support rate update</h2>
-            <div><img class="wd-padded-pic" width="100px" height="100px" src="usa.jpeg"/></div>
-        </div>
+            <div class="position-relative">
+                <img src="../../images/starship.jpg" width="100%"/>
+                <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
+            </div>
 
-        <div class="wd-nav-border">
-            <h3 class="wd-trend-topic">Trending in United States</h3>
-            <h1>Starship</h1>
-            <h3 class="wd-trend-topic">1,259 Tweets</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                ReactJS <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary fw-normal">- 2h</span>
+                            </div>
+                            <div class="fw-bolder">
+                                React.js is a component based front end library that makes it very easy tp build Single Page Application or SPAs
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="../../images/react.jpg" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="fw-bolder">
+                                JavaScript <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary fw-normal">- 2h</span>
+                                </div>
+                                <div class="fw-bolder">
+                                    JavaScript is programming language that can run on browsers as well as desktops
+                                    <br>
+                                    <span class="text-secondary fw-normal">123K Tuits</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img class="float-end" src="../../images/js.jpg" height="100px">
+                            </div>
+                        </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                jQuery
+                            </div>
+                            <div class="text-secondary fw-normal">
+                                <span>123K Tuits</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="../../images/jquery.jpg" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                NodeJS <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary fw-normal">- 2h</span>
+                            </div>
+                            <!--<div class="fw-bolder">
+                                JavaScript is programming language that can run on browsers as well as desktops
+                                <br>
+                                <span class="text-secondary fw-normal">123K Tuits</span>
+                            </div>-->
+                            <div class="text-secondary fw-normal">
+                                <span>123K Tuits</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="../../images/nodejs.jpg" height="100px">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block col-xxl-4 col-xl-4 col-lg-4">
+            <div class="list-group">
+                <span class="list-group-item list-group-item-action fw-bolder">Who to follow</span>
+                <div class="col-2 list-group-item list-group-item-action">
+                    <img class="float-start rounded-circle me-3 wd-follow" src="../../images/java.jpg">
+                    <button class="float-end btn btn-primary w-20 rounded-pill">Follow</button>
+                    <div><div class="d-inline col-2 fw-bold">Java </div><i class="fa-solid fa-circle-check"></i>
+                    <br><span class="text-secondary">@Java</span></div>
+                </div>
+                <div class="col-2 list-group-item list-group-item-action">
+                    <img class="float-start rounded-circle me-3 wd-follow" src="../../images/relaspace.jpg">
+                    <button class="float-end btn btn-primary w-20 rounded-pill">Follow</button>
+                    <div><div class="col-2 fw-bold d-inline">Relativity Space </div><i class="fa-solid text-nowrap fa-circle-check"></i>
+                        <br><span class="text-secondary">@relativityspace</span></div>
+                </div>
+
+                <div class="col-2 list-group-item list-group-item-action">
+                    <img class="float-start rounded-circle me-3 wd-follow" src="../../images/vgalactic.jpg">
+                    <button class="float-end btn btn-primary w-20 rounded-pill">Follow</button>
+                    <div><div class="d-inline col-2 fw-bold">Virgin Galactic </div><i class="fa-solid fa-circle-check"></i>
+                        <br><span class="text-secondary">@virgingalactic</span></div>
+                </div>
+
+                <div class="col-3 list-group-item list-group-item-action">
+                    <img class="float-start rounded-circle me-3 wd-follow" src="../../images/NASA.jpg">
+                    <button class="float-end btn btn-primary w-20 rounded-pill">Follow</button>
+                    <div><div class="d-inline col-2 fw-bold">NASA </div><i class="fa-solid fa-circle-check"></i>
+                        <br><span class="text-secondary">@NASA</span></div>
+                </div>
+
+                <div class="col-3 list-group-item list-group-item-action">
+                    <img class="float-start rounded-circle me-3 wd-follow" src="../../images/tesla.png">
+                    <button class="float-end btn btn-primary w-20 rounded-pill">Follow</button>
+                    <div><div class="d-inline col-2 fw-bold">Tesla </div><i class="fa-solid fa-circle-check"></i>
+                        <br><span class="text-secondary">@Tesla</span></div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+
 </body>
 </html>
