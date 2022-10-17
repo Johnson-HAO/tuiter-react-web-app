@@ -1,10 +1,23 @@
-.btn-primary.override-bs {
-    background-color: #a90dfd;
-    border-color: #fd0d51;
-    border-width: 10px;
-    border-radius: 20px;
-    border-style: dashed;
-    font-size: 2em;
-    font-weight: bolder;
+.class-0 {
+    background-color: red;
+    color: white;
 }
+
+.class-1 {
+    background-color: blue;
+    color: white;
+}
+
+.class-2 {
+    background-color: green;
+    color: yellow;
+}
+
+.im-hidden {
+    display: none;
+}
+
+
+
+
 

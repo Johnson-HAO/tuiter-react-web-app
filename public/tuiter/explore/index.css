@@ -26,6 +26,8 @@
     height: 40px;
 
 }
+body {
+}
 
 /*body {
     font-family: "Arial";
@@ -98,7 +100,7 @@
 .wd-padded-pic {
     padding-right: 12px;
     border-radius: 20px;
-}*/
+}
 
 
 
