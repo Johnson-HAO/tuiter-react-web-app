@@ -5,6 +5,7 @@ const HomeComponent = () => {
     return(
         <>
             <div className="row mt-2">
+                <h1>Home</h1>
                 <PostList/>
             </div>
         </>
