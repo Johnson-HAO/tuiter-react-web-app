@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React from "react";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuit-stats";
