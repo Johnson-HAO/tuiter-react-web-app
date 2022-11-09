@@ -29,26 +29,26 @@ const TuitStats = (
     return (
         <div className="row wd-tuit-interactions pt-2 pb-2">
             <div className="wd-interaction-comment col-3 align-content-center text-secondary">
-                <a href="#" className="text-decoration-none text-secondary small">
-                    <FontAwesomeIcon icon={faComment} className="pe-2 text-decoration-none text-secondary fa-1x"/>
+                <a href="/" className="text-decoration-none text-secondary small">
+                    <i className="bi bi-chat pe-2 text-decoration-none text-secondary fa-1x"></i>
                     {tuit.replies}
                 </a>
             </div>
             <div className="wd-interaction-retweet col-3 align-content-center text-secondary">
-                <a href="#" className="text-decoration-none text-secondary small">
+                <a href="/" className="text-decoration-none text-secondary small">
                     <FontAwesomeIcon icon={faRetweet} className="pe-2 text-decoration-none text-secondary fa-1x"/>
                     {tuit.retuits}
                 </a>
             </div>
             <div className="wd-interaction-like col-3  text-decoration-none text-secondary">
-                <a href="#" className="text-decoration-none text-secondary small">
+                <a href="/" className="text-decoration-none text-secondary small">
                     { tuit.liked && <FontAwesomeIcon icon={faSolidHeart} className="pe-2 text-danger fa-1x"/> }
                     { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart} className="pe-2 text-secondary fa-1x"/> }
                     {tuit.likes}
                 </a>
             </div>
             <div className="wd-interaction-share col-3 text-decoration-none">
-                <a href="#" className="text-secondary"><FontAwesomeIcon icon={faArrowUpFromBracket}/></a>
+                <a href="/" className="text-secondary"><FontAwesomeIcon icon={faArrowUpFromBracket}/></a>
             </div>
         </div>
     );
