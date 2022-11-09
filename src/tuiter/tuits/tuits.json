@@ -1,0 +1,47 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+
+  {
+    "_id": 2,
+    "topic": "Autopilot",
+    "userName": "Tesla",
+    "title": "1000s of Martian colonists being building Mars Base 1",
+    "time": "4d",
+    "image": "Tesla.png",
+    "tuit": "Autopilot is an advanced driver assistance systems that assists your car with steering, accelerating and braking for other vehicles and pedestrians within its lane.",
+    "handle": "@tesla",
+    "liked": false,
+    "replies": 234,
+    "retuits": 543,
+    "likes": 3456
+  },
+  {
+    "_id": 3,
+    "topic": "Space",
+    "userName": "ElonMusk",
+    "title": "Inspiration4 Mission to Space",
+    "time": "5d",
+    "image": "elonmusk.jpg",
+    "tuit": "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
+    "handle": "@elonmusk",
+    "liked": true,
+    "replies": 1111,
+    "retuits": 2222,
+    "likes": 3089
+  }
+]
+
+
