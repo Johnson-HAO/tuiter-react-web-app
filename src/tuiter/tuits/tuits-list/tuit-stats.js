@@ -27,27 +27,36 @@ const TuitStats = (
     }
 ) => {
     return (
-        <div className="row wd-tuit-interactions pt-2 pb-2">
+        <div className="row pt-2 pb-2">
             <div className="wd-interaction-comment col-3 align-content-center text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
                     <i className="bi bi-chat pe-2 text-decoration-none text-secondary fa-1x"></i>
                     {tuit.replies}
                 </a>
             </div>
-            <div className="wd-interaction-retweet col-3 align-content-center text-secondary">
+            <div className="col-2 align-content-center text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
                     <FontAwesomeIcon icon={faRetweet} className="pe-2 text-decoration-none text-secondary fa-1x"/>
                     {tuit.retuits}
                 </a>
             </div>
-            <div className="wd-interaction-like col-3  text-decoration-none text-secondary">
+            <div className="col-2  text-decoration-none text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
-                    { tuit.liked && <FontAwesomeIcon icon={faSolidHeart} className="pe-2 text-danger fa-1x"/> }
-                    { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart} className="pe-2 text-secondary fa-1x"/> }
-                    {tuit.likes}
+                    { tuit.liked && <FontAwesomeIcon icon={faSolidHeart}
+                                                     className="pe-2 text-danger fa-1x"
+                                                     onClick={() => dispatch(updateTuitThunk({
+                                                         ...tuit,
+                                                         liked: false,
+                                                         likes: tuit.likes - 1}))}/> }
+                    { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart}
+                                                      className="pe-2 text-secondary fa-1x"
+                                                      onClick={() => dispatch(updateTuitThunk({
+                                                          ...tuit,
+                                                          liked: true,
+                                                          likes: tuit.likes + 1}))}/> }
                 </a>
             </div>
-            <div className="wd-interaction-share col-3 text-decoration-none">
+            <div className="col-2 text-decoration-none">
                 <a href="/" className="text-secondary"><FontAwesomeIcon icon={faArrowUpFromBracket}/></a>
             </div>
         </div>
