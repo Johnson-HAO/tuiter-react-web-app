@@ -1,11 +1,12 @@
 import React from "react";
+import {useDispatch} from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEllipsis as fasEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as faSolidHeart} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as faOutlinedHeart} from '@fortawesome/free-regular-svg-icons'
 import { faComment, faArrowUpFromBracket, faRetweet} from '@fortawesome/free-solid-svg-icons'
-
+import {updateTuitThunk} from "../../../services/tuits-thunks";
 library.add(fasEllipsis, faSolidHeart, faOutlinedHeart, faComment, faArrowUpFromBracket, faRetweet)
 
 const TuitStats = (
@@ -26,6 +27,7 @@ const TuitStats = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
     return (
         <div className="row pt-2 pb-2">
             <div className="wd-interaction-comment col-3 align-content-center text-secondary">
