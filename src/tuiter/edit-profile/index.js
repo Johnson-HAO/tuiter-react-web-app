@@ -108,7 +108,7 @@ const EditProfileComponent = () => {
                     <div>
                         <div className="position-relative">
                             <div className="row wd-banner position-relative d-inline ms-0">
-                                <img src={profile.bannerPicture} className="w-100 px-0 mx-0 border-0" alt={}></img>
+                                <img src={profile.bannerPicture} className="w-100 px-0 mx-0 border-0"></img>
                                 <div className="col text-center card-img-overlay align-middle">
                                     <button className="rounded-circle bg-secondary m-50 border-0 bg-opacity-75 mx-1"><i className="bi bi-camera text-white"></i></button>
                                     <button className="rounded-circle bg-secondary m-50 border-0 bg-opacity-75"><i className="bi bi-x-lg text-white"></i></button>
