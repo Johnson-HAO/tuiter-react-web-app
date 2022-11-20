@@ -45,6 +45,7 @@ const NavigationSidebar = () => {
                         ${active === 'more'?'active':''}`}><i className="bi bi-three-dots me-1"></i>
                     More
                 </a>
+                <button className="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
             </div>
     );
 };
