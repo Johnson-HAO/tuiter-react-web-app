@@ -117,7 +117,7 @@ const EditProfileComponent = () => {
                             </div>
                             <div className="row img-wrapper card-img-overlay top-50 h-100 ms-3 mb-4 position-absolute">
                                 <div className="col-2 card-img-overlay mt-5 img-fluid">
-                                    <img src={profile.profilePicture} className="h-50 rounded-circle mx-3" alt={}></img>
+                                    <img src={profile.profilePicture} className="h-50 rounded-circle mx-3"></img>
                                     <div className="card-img-overlay rounded-circle start-50 pt-1">
                                         <button className="btn rounded-circle bg-secondary border-0 bg-opacity-75 my-4">
                                             <i className="bi bi-camera text-white"></i>
