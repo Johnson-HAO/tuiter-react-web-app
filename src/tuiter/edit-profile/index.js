@@ -1,5 +1,3 @@
-// eslint-disable
-
 import React, {useState} from "react";
 import Form from 'react-bootstrap/Form';
 import {FloatingLabel, FormGroup, FormControl} from "react-bootstrap";

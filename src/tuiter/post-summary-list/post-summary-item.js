@@ -1,4 +1,5 @@
 import React from "react";
+
 const PostSummaryItem = (
     {
         post = {
@@ -10,7 +11,7 @@ const PostSummaryItem = (
         }
     }
 ) => {
-    return(
+    return (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-10">
