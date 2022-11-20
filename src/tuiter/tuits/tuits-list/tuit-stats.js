@@ -29,8 +29,8 @@ const TuitStats = (
 ) => {
     const dispatch = useDispatch();
     return (
-        <div className="row pt-2 pb-2">
-            <div className="wd-interaction-comment col-3 align-content-center text-secondary">
+        <div className="row pt-2 pb-2 d-flex justify-content-around">
+            <div className="col-2 align-content-center text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
                     <i className="bi bi-chat pe-2 text-decoration-none text-secondary fa-1x"></i>
                     {tuit.replies}
@@ -44,14 +44,12 @@ const TuitStats = (
             </div>
             <div className="col-2  text-decoration-none text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
-                    { tuit.liked && <FontAwesomeIcon icon={faSolidHeart}
-                                                     className="pe-2 text-danger fa-1x"
+                    { tuit.liked && <FontAwesomeIcon icon={faSolidHeart} className="pe-2 text-danger fa-1x"
                                                      onClick={() => dispatch(updateTuitThunk({
                                                          ...tuit,
                                                          liked: false,
                                                          likes: tuit.likes - 1}))}/> }
-                    { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart}
-                                                      className="pe-2 text-secondary fa-1x"
+                    { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart} className="pe-2 text-secondary fa-1x"
                                                       onClick={() => dispatch(updateTuitThunk({
                                                           ...tuit,
                                                           liked: true,
