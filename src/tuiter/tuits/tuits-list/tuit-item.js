@@ -38,7 +38,7 @@ const TuitItem = (
                 <div className="col-10">
 
                     <span className="fw-bold small">{tuit.userName}</span>
-                    <span className="px-1 text-primary"><i className="fa-solid fa-certificate"/></span>
+                    <span className="px-1 text-primary"><i className="bi bi-patch-check"></i></span>
                     <span className="small text-secondary">{tuit.handle} &middot;</span>
                     <span className="small text-secondary px-1">{tuit.time}</span>
                     <i className="bi bi-x-lg float-end"

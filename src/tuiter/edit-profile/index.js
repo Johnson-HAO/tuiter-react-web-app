@@ -176,7 +176,6 @@ const EditProfileComponent = () => {
                         </Form>
                     </div>
                 </div>
-
             </div>
         </>
     );

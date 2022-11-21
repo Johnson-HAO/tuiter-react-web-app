@@ -43,10 +43,8 @@ const ProfileComponent = () => {
                     <div className="col-3">
                         <span className="fw-bold small">{profile.followersCount}</span><span className="ps-1 text-secondary small">Followers</span>
                     </div>
-
                 </div>
             </div>
-
         </div>
     );
 };
