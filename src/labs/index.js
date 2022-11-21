@@ -1,5 +1,5 @@
 import Assignment6 from "./a6";
-//import React from "react";
+import React from "react";
 import Nav from "../nav";
 import Assignment7 from "./a7";
 import {Routes, Route} from "react-router";
