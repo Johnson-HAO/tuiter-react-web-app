@@ -56,6 +56,21 @@ const TuitStats = (
                                                           likes: tuit.likes + 1}))}/> }
                 </a>
             </div>
+            <div className="col-2 text-decoration-none text-secondary">
+                <a href="/" className="text-decoration-none text-secondary small">
+                    { tuit.disliked && <i className="bi bi-hand-thumbs-down-fill pe-2 text-danger fa-1x"
+                                          onClick={() => dispatch(updateTuitThunk({
+                                              ...tuit,
+                                              disliked: false,
+                                              dislikes: tuit.dislikes - 1}))}/> }
+                    { !tuit.disliked && <i className="bi bi-hand-thumbs-down pe-2 text-secondary fa-1x"
+                                           onClick={() => dispatch(updateTuitThunk({
+                                               ...tuit,
+                                               disliked: true,
+                                               dislikes: tuit.dislikes + 1}))}/> }
+                    {tuit.dislikes}
+                </a>
+            </div>
             <div className="col-2 text-decoration-none">
                 <a href="/" className="text-secondary"><FontAwesomeIcon icon={faArrowUpFromBracket}/></a>
             </div>
