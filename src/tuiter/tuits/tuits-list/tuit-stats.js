@@ -1,5 +1,4 @@
 import React from "react";
-import {useDispatch} from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEllipsis as fasEllipsis} from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +6,7 @@ import { faHeart as faSolidHeart} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as faOutlinedHeart} from '@fortawesome/free-regular-svg-icons'
 import { faComment, faArrowUpFromBracket, faRetweet} from '@fortawesome/free-solid-svg-icons'
 import {updateTuitThunk} from "../../../services/tuits-thunks";
+import {useDispatch} from "react-redux";
 library.add(fasEllipsis, faSolidHeart, faOutlinedHeart, faComment, faArrowUpFromBracket, faRetweet)
 
 const TuitStats = (
@@ -17,8 +17,10 @@ const TuitStats = (
             "userName": "SpaceX",
             "time": "2h",
             "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-            "image": "spacex.jpeg",
+            "image": "spacex.png",
             "liked": false,
+            "disliked": false,
+            "dislikes": 0,
             "replies": 1,
             "retuits": 2,
             "likes": 5,
@@ -28,11 +30,12 @@ const TuitStats = (
     }
 ) => {
     const dispatch = useDispatch();
+
     return (
         <div className="row pt-2 pb-2 d-flex justify-content-around">
             <div className="col-2 align-content-center text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
-                    <i className="bi bi-chat pe-2 text-decoration-none text-secondary fa-1x"></i>
+                    <FontAwesomeIcon icon={faComment} className="pe-2 text-decoration-none text-secondary fa-1x"/>
                     {tuit.replies}
                 </a>
             </div>
@@ -42,18 +45,21 @@ const TuitStats = (
                     {tuit.retuits}
                 </a>
             </div>
-            <div className="col-2  text-decoration-none text-secondary">
+            <div className="col-2 text-decoration-none text-secondary">
                 <a href="/" className="text-decoration-none text-secondary small">
-                    { tuit.liked && <FontAwesomeIcon icon={faSolidHeart} className="pe-2 text-danger fa-1x"
+                    { tuit.liked && <FontAwesomeIcon icon={faSolidHeart}
+                                                     className="pe-2 text-danger fa-1x"
                                                      onClick={() => dispatch(updateTuitThunk({
                                                          ...tuit,
                                                          liked: false,
                                                          likes: tuit.likes - 1}))}/> }
-                    { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart} className="pe-2 text-secondary fa-1x"
+                    { !tuit.liked && <FontAwesomeIcon icon={faOutlinedHeart}
+                                                      className="pe-2 text-secondary fa-1x"
                                                       onClick={() => dispatch(updateTuitThunk({
                                                           ...tuit,
                                                           liked: true,
                                                           likes: tuit.likes + 1}))}/> }
+                    {tuit.likes}
                 </a>
             </div>
             <div className="col-2 text-decoration-none text-secondary">

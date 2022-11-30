@@ -1,8 +1,14 @@
+// eslint-disable-next-line
 import React from "react";
 import { useDispatch } from "react-redux";
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEllipsis as fasEllipsis} from '@fortawesome/free-solid-svg-icons'
+import { faHeart as fasHeart} from '@fortawesome/free-solid-svg-icons'
+import { faComment, faArrowUpFromBracket, faRetweet, faCertificate} from '@fortawesome/free-solid-svg-icons'
 import TuitStats from "./tuit-stats";
-//import {deleteTuit} from "../../reducers/tuits-reducer";
 import {deleteTuitThunk} from "../../../services/tuits-thunks";
+library.add(fasEllipsis, fasHeart, faComment, faArrowUpFromBracket, faRetweet, faCertificate)
 
 
 const TuitItem = (
@@ -32,13 +38,13 @@ const TuitItem = (
                 <div className="col-auto">
                     <img width={50}
                          className="float-end rounded-circle"
-                         src={`/images/${tuit.image}`} alt={`/images/${tuit.image}`}/>
+                         src={`/images/${tuit.image}`} alt={""}/>
 
                 </div>
                 <div className="col-10">
 
                     <span className="fw-bold small">{tuit.userName}</span>
-                    <span className="px-1 text-primary"><i className="bi bi-patch-check"></i></span>
+                    <span className="px-1 text-primary"><i class="text-primary bi bi-check-circle-fill"/></span>
                     <span className="small text-secondary">{tuit.handle} &middot;</span>
                     <span className="small text-secondary px-1">{tuit.time}</span>
                     <i className="bi bi-x-lg float-end"

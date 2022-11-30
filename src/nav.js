@@ -8,7 +8,7 @@ function Nav() {
             <Link to="/a7">Assignment 7</Link> |
             <Link to="/tuiter">Tuiter</Link>
         </div>
-    )
+    );
 }
 
 export default Nav;
