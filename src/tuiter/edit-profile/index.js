@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Form from 'react-bootstrap/Form';
 import {FloatingLabel, FormGroup, FormControl} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
-import {updateProfile} from "../reducers/profile-reducer";
+import {updateProfile} from "../reducers/profile-reducer.js";
 import { useNavigate } from "react-router-dom";
 
 
