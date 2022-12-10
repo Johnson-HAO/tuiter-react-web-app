@@ -1,17 +1,17 @@
 import React from "react";
-import ExploreComponent from "./explore";
-import NavigationSidebar from "./navigation-sidebar";
+import ExploreComponent from "./explore/index.js";
+import NavigationSidebar from "./navigation-sidebar/index.js";
 import {Routes, Route} from "react-router";
-import HomeComponent from "./home";
-import WhoToFollowList from "./who-to-follow-list";
+import HomeComponent from "./home/index.js";
+import WhoToFollowList from "./who-to-follow-list/index.js";
 //import Nav from "../nav";
-import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./reducers/tuits-reducer";
-import profileReducer from "./reducers/profile-reducer";
+import whoReducer from "./reducers/who-reducer.js";
+import tuitsReducer from "./reducers/tuits-reducer.js";
+import profileReducer from "./reducers/profile-reducer.js";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import ProfileComponent from "./profile";
-import EditProfileComponent from "./edit-profile";
+import ProfileComponent from "./profile/index.js";
+import EditProfileComponent from "./edit-profile/index.js";
 
 
 

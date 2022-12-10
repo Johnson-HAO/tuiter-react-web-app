@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 //import tuits from '../tuits/tuits.json';
-import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../services/tuits-thunks";
+import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../services/tuits-thunks.js";
 
 const currentUser = {
     "userName": "ElonMusk",

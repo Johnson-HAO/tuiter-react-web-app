@@ -5,7 +5,7 @@ import { faEllipsis as fasEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as faSolidHeart} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as faOutlinedHeart} from '@fortawesome/free-regular-svg-icons'
 import { faComment, faArrowUpFromBracket, faRetweet} from '@fortawesome/free-solid-svg-icons'
-import {updateTuitThunk} from "../../../services/tuits-thunks";
+import {updateTuitThunk} from "../../../services/tuits-thunks.js";
 import {useDispatch} from "react-redux";
 library.add(fasEllipsis, faSolidHeart, faOutlinedHeart, faComment, faArrowUpFromBracket, faRetweet)
 

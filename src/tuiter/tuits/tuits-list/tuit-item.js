@@ -6,8 +6,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEllipsis as fasEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as fasHeart} from '@fortawesome/free-solid-svg-icons'
 import { faComment, faArrowUpFromBracket, faRetweet, faCertificate} from '@fortawesome/free-solid-svg-icons'
-import TuitStats from "./tuit-stats";
-import {deleteTuitThunk} from "../../../services/tuits-thunks";
+import TuitStats from "./tuit-stats.js";
+import {deleteTuitThunk} from "../../../services/tuits-thunks.js";
 library.add(fasEllipsis, fasHeart, faComment, faArrowUpFromBracket, faRetweet, faCertificate)
 
 
