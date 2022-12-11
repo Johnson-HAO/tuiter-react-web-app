@@ -12,8 +12,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import ProfileComponent from "./profile/index.js";
 import EditProfileComponent from "./edit-profile/index.js";
-
-
+///
+///
 
 const store = configureStore(
     {reducer: {who: whoReducer, tuitsData: tuitsReducer, profile: profileReducer}});
