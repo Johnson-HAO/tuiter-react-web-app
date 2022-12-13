@@ -8,7 +8,7 @@ import { faComment, faArrowUpFromBracket, faRetweet} from '@fortawesome/free-sol
 import {updateTuitThunk} from "../../../services/tuits-thunks.js";
 import {useDispatch} from "react-redux";
 library.add(fasEllipsis, faSolidHeart, faOutlinedHeart, faComment, faArrowUpFromBracket, faRetweet)*/
-
+//
 
 import {FaComment, FaHeart, FaRetweet, FaShare, FaThumbsDown} from 'react-icons/fa';
 import React from 'react';
